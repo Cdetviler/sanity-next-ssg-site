@@ -1,0 +1,61 @@
+$flexDirections: ('row', 'row-reverse', 'column', 'column-reverse');
+$flexJustifyContentValues: ('flex-start', 'flex-end', 'center', 'space-between', 'space-around', 'space-evenly');
+$flexAlignItemsValues: ('stretch', 'flex-start', 'flex-end', 'center');
+$flexAlignContentValues: ('normal', 'flex-start', 'flex-end', 'center', 'space-between', 'space-around', 'space-evenly', 'stretch');
+$flexGapProperties: (
+  'none': var(--cd-stack-gap-none),
+  'sm': var(--cd-stack-gap-sm),
+  'md': var(--cd-stack-gap-md),
+  'lg':  var(--cd-stack-gap-lg),
+  'xl':  var(--cd-stack-gap-xl)
+);
+$flexProperties: (
+  'flex-direction': $flexDirections,
+  'justify-content': $flexJustifyContentValues,
+  'align-items': $flexAlignItemsValues,
+  'align-content': $flexAlignContentValues,
+);
+
+$mediaQuerySizes: (
+  'xs': '(min-width: #{0px}) and (max-width: #{599px})',
+  'sm': '(min-width: #{600px}) and (max-width: #{899px})',
+  'md': '(min-width: #{900px}) and (max-width: #{1199px})',
+  'lg': '(min-width: #{1200px}) and (max-width: #{1535px})',
+  'xl': '(min-width: #{1536px})',
+);
+
+@mixin generate-flex-properties() {
+  @each $flexProperty, $values in $flexProperties {
+    @each $value in $values {
+      @include generate-media-query-classes($flexProperty, $value);
+    }
+  }
+}
+
+@mixin generate-media-query-classes($property, $value) {
+  @each $size, $mediaQuery in $mediaQuerySizes {
+    .#{$size}-media-#{$property}-#{$value} {
+      @media #{$mediaQuery} {
+        #{$property}: #{$value};
+      }
+    }
+  }
+}
+
+@mixin generate-flex-properties-gap() {
+  @each $flexProperty, $values in $flexGapProperties {
+    @each $value in $values {
+      @include generate-media-query-classes-gap($flexProperty, $value);
+    }
+  }
+}
+
+@mixin generate-media-query-classes-gap($property, $value) {
+  @each $size, $mediaQuery in $mediaQuerySizes {
+    .#{$size}-media-gap-#{$property} {
+      @media #{$mediaQuery} {
+        gap: #{$value};
+      }
+    }
+  }
+}

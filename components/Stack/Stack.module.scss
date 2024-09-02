@@ -1,0 +1,23 @@
+@import "/styles/mixins";
+@include generate-flex-properties();
+@include generate-flex-properties-gap();
+
+.stack {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    border-style: var(--cd-stack-border-style);
+    border-radius: var(--cd-stack-border-radius);
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.wrapReverse {
+    flex-wrap: wrap-reverse;
+}
+
+.moWrap {
+    flex-wrap: nowrap;
+}
