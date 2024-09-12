@@ -167,20 +167,54 @@
   --cd-color-hotpink-800: #9a246d;
   --cd-color-hotpink-900: #741f5f;
 
+  --cd-color-aqua-50: #dff4f6;
+  --cd-color-aqua-100: #b0e3e7;
+  --cd-color-aqua-200: #7fd1d8;
+  --cd-color-aqua-300: #52bec9;
+  --cd-color-aqua-400: #39b1be;
+  --cd-color-aqua-500: #2da4b4;
+  --cd-color-aqua-600: #2a95a3;
+  --cd-color-aqua-700: #27818b;
+  --cd-color-aqua-800: #246d74;
+  --cd-color-aqua-900: #1e4b4c;
+
 /* ALIASES */
+  /* INTERMEDIARY COLOR ALIASES */
+  /* A color that is on the darker side of its generated color palette */
+  --cd-color-primary-darkest: var(--cd-color-mint-900);
+  --cd-color-primary-darker: var(--cd-color-mint-900);
+  --cd-color-primary-default: var(--cd-color-mint-900);
+  --cd-color-primary-lighter: var(--cd-color-mint-700);
+  --cd-color-primary-lightest: var(--cd-color-mint-600);
+  /* Complementary to the primary color and is on the lighter side of its generated color palette */
+  --cd-color-secondary-darkest: var(--cd-color-mint-400);
+  --cd-color-secondary-darker: var(--cd-color-mint-300);
+  --cd-color-secondary-default: var(--cd-color-mint-100);
+  --cd-color-secondary-lighter: var(--cd-color-mint-100);
+  --cd-color-secondary-lightest: var(--cd-color-mint-100);
+  /*  Analogous to the primary color and is on the darker side of its generated color palette */
+  --cd-color-tertiary-darkest: var(--cd-color-hotpink-900);
+  --cd-color-tertiary-darker: var(--cd-color-hotpink-900);
+  --cd-color-tertiary-default: var(--cd-color-hotpink-900);
+  --cd-color-tertiary-lighter: var(--cd-color-hotpink-700);
+  --cd-color-tertiary-lightest: var(--cd-color-hotpink-600);
 
   /* SURFACE COLOR */
-  --cd-color-surface-primary: var(--cd-color-blue-900);
-  --cd-color-surface-primary-tint: var(--cd-color-blue-600);
+  --cd-color-surface-primary-default: var(--cd-color-primary-default);
+  --cd-color-surface-primary-hover: var(--cd-color-primary-lighter);
+  --cd-color-surface-primary-active: var(--cd-color-primary-lightest);
 
-  --cd-color-surface-secondary: var(--cd-color-tan-100);
-  --cd-color-surface-secondary-tint: var(--cd-color-tan-300);
+  --cd-color-surface-secondary-default: var(--cd-color-secondary-default);
+  --cd-color-surface-secondary-hover: var(--cd-color-secondary-darker);
+  --cd-color-surface-secondary-active: var(--cd-color-secondary-darkest);
 
-  --cd-color-surface-tertiary: var(--cd-color-purple-900);
-  --cd-color-surface-tertiary-tint: var(--cd-color-purple-600);
-
+  --cd-color-surface-tertiary-default: var(--cd-color-tertiary-default);
+  --cd-color-surface-tertiary-hover: var(--cd-color-tertiary-lighter);
+  --cd-color-surface-tertiary-active: var(--cd-color-tertiary-lightest);
+  
   --cd-color-surface-ghost: transparent;
-  --cd-color-surface-ghost-tint: rgba(255, 255, 255, 0.25);
+  --cd-color-surface-ghost-hover: rgba(0, 0, 0, 0.10);
+  --cd-color-surface-ghost-active: rgba(0, 0, 0, 0.10);
 
   --cd-color-surface-neutral: var(--cd-color-neutral-0);
   /* (dark variant or light variant of neutral depending on theme) */
@@ -189,18 +223,18 @@
   --cd-color-surface-disabled: var(--cd-color-neutral-100);
 
   /* TEXT COLOR */
-  --cd-color-text-primary-default: var(--cd-color-blue-900);
-  --cd-color-text-primary-tint: var(--cd-color-blue-700);
+  --cd-color-text-primary-default: var(--cd-color-primary-default);
+  --cd-color-text-primary-tint: var(--cd-color-primary-lighter);
   --cd-color-text-primary-accent: var(--cd-color-tan-100);
   --cd-color-text-primary-neutral: var(--cd-color-neutral-0);
 
-  --cd-color-text-secondary-default: var(--cd-color-tan-100);
-  --cd-color-text-secondary-tint: var(--cd-color-tan-300);
+  --cd-color-text-secondary-default: var(--cd-color-secondary-default);
+  --cd-color-text-secondary-tint: var(--cd-color-secondary-hover);
   --cd-color-text-secondary-accent: var(--cd-color-blue-900);
   --cd-color-text-secondary-neutral: var(--cd-color-neutral-900);
 
-  --cd-color-text-tertiary-default: var(--cd-color-purple-900);
-  --cd-color-text-tertiary-tint: var(--cd-color-purple-700);
+  --cd-color-text-tertiary-default: var(--cd-color-tertiary-default);
+  --cd-color-text-tertiary-tint: var(--cd-color-tertiary-hover);
   --cd-color-text-tertiary-accent: var(--cd-color-tan-100);
   --cd-color-text-tertiary-neutral: var(--cd-color-neutral-0);
 
@@ -210,17 +244,17 @@
   --cd-color-text-disabled: var(--cd-color-neutral-300);
 
   /* BORDER COLOR */
-  --cd-color-border-primary: var(--cd-color-blue-900);
-  --cd-color-border-primary-tint: var(--cd-color-blue-600);
+  --cd-color-border-primary-default: var(--cd-color-primary-default);
+  --cd-color-border-primary-hover: var(--cd-color-primary-lighter);
 
-  --cd-color-border-secondary: var(--cd-color-tan-100);
-  --cd-color-border-secondary-tint: var(--cd-color-tan-300);
+  --cd-color-border-secondary-default: var(--cd-color-secondary-default);
+  --cd-color-border-secondary-hover: var(--cd-color-secondary-darker);
 
-  --cd-color-border-tertiary: var(--cd-color-purple-900);
-  --cd-color-border-tertiary-tint: var(--cd-color-purple-600);
+  --cd-color-border-tertiary-default: var(--cd-color-tertiary-default);
+  --cd-color-border-tertiary-hover: var(--cd-color-tertiary-lighter);
 
-  --cd-color-border-neutral: var(--cd-color-neutral-900);
-  --cd-color-border-neutral-tint: var(--cd-color-neutral-900);
+  --cd-color-border-neutral-default: var(--cd-color-neutral-default);
+  --cd-color-border-neutral-hover: var(--cd-color-neutral-lighter);
 
   --cd-color-border-disabled:  var(--cd-color-neutral-100);
 
@@ -271,89 +305,89 @@
 
   /* BUTTON SURFACE COLOR */
   /* PRIMARY BUTTON SURFACE COLOR */
-  --cd-button-surface-color-primary: var(--cd-color-surface-primary);
+  --cd-button-surface-color-primary: var(--cd-color-surface-primary-default);
   --cd-button-surface-color-primary-disabled: var(--cd-color-surface-disabled);
-  --cd-button-surface-color-primary-hover: var(--cd-color-surface-primary-tint);
-  --cd-button-surface-color-primary-active: var(--cd-color-surface-primary);
-  --cd-button-surface-color-primary-active-hover: var(--cd-color-surface-primary-tint);
+  --cd-button-surface-color-primary-hover: var(--cd-color-surface-primary-hover);
+  --cd-button-surface-color-primary-active: var(--cd-color-surface-primary-active);
+  --cd-button-surface-color-primary-active-hover: var(--cd-color-surface-primary-hover);
 
   /* PRIMARY INVERSE BUTTON SURFACE COLOR */
-  --cd-button-surface-color-primary-inverse: transparent;
+  --cd-button-surface-color-primary-inverse: var(--cd-color-surface-ghost);
   --cd-button-surface-color-primary-inverse-disabled: var(--cd-color-surface-disabled);
-  --cd-button-surface-color-primary-inverse-hover: transparent;
-  --cd-button-surface-color-primary-inverse-active: transparent;
-  --cd-button-surface-color-primary-inverse-active-hover: transparent;
+  --cd-button-surface-color-primary-inverse-hover: var(--cd-color-surface-ghost-hover);
+  --cd-button-surface-color-primary-inverse-active: var(--cd-color-surface-ghost-active);
+  --cd-button-surface-color-primary-inverse-active-hover: var(--cd-color-surface-ghost-hover);
 
   /* SECONDARY BUTTON SURFACE COLOR */
-  --cd-button-surface-color-secondary: var(--cd-color-surface-secondary);
+  --cd-button-surface-color-secondary: var(--cd-color-surface-secondary-default);
   --cd-button-surface-color-secondary-disabled: var(--cd-color-surface-disabled);
-  --cd-button-surface-color-secondary-hover: var(--cd-color-surface-secondary-tint);
-  --cd-button-surface-color-secondary-active: var(--cd-color-surface-secondary);
-  --cd-button-surface-color-secondary-active-hover: var(--cd-color-surface-secondary-tint);
+  --cd-button-surface-color-secondary-hover: var(--cd-color-surface-secondary-hover);
+  --cd-button-surface-color-secondary-active: var(--cd-color-surface-secondary-active);
+  --cd-button-surface-color-secondary-active-hover: var(--cd-color-surface-secondary-hover);
 
   /* SECONDARY INVERSE BUTTON SURFACE COLOR */
-  --cd-button-surface-color-secondary-inverse: transparent;
+  --cd-button-surface-color-secondary-inverse: var(--cd-color-surface-ghost);
   --cd-button-surface-color-secondary-inverse-disabled: var(--cd-color-surface-disabled);
-  --cd-button-surface-color-secondary-inverse-hover: transparent;
-  --cd-button-surface-color-secondary-inverse-active: transparent;
-  --cd-button-surface-color-secondary-inverse-active-hover: transparent;
+  --cd-button-surface-color-secondary-inverse-hover: var(--cd-color-surface-ghost-hover);
+  --cd-button-surface-color-secondary-inverse-active: var(--cd-color-surface-primary-active);
+  --cd-button-surface-color-secondary-inverse-active-hover: var(--cd-color-surface-ghost-hover);
 
   /* TERTIARY BUTTON SURFACE COLOR */
-  --cd-button-surface-color-tertiary: var(--cd-color-surface-tertiary);
+  --cd-button-surface-color-tertiary: var(--cd-color-surface-tertiary-default);
   --cd-button-surface-color-tertiary-disabled: var(--cd-color-surface-disabled);
-  --cd-button-surface-color-tertiary-hover: var(--cd-color-surface-tertiary-tint);
-  --cd-button-surface-color-tertiary-active: var(--cd-color-surface-tertiary);
-  --cd-button-surface-color-tertiary-active-hover: var(--cd-color-surface-tertiary-tint);
+  --cd-button-surface-color-tertiary-hover: var(--cd-color-surface-tertiary-hover);
+  --cd-button-surface-color-tertiary-active: var(--cd-color-surface-tertiary-active);
+  --cd-button-surface-color-tertiary-active-hover: var(--cd-color-surface-tertiary-hover);
 
   /* TERTIARY INVERSE BUTTON SURFACE COLOR */
-  --cd-button-surface-color-tertiary-inverse: transparent;
+  --cd-button-surface-color-tertiary-inverse: var(--cd-color-surface-ghost);
   --cd-button-surface-color-tertiary-inverse-disabled: var(--cd-color-surface-disabled);
-  --cd-button-surface-color-tertiary-inverse-hover: transparent;
-  --cd-button-surface-color-tertiary-inverse-active: transparent;
-  --cd-button-surface-color-tertiary-inverse-active-hover: transparent;
+  --cd-button-surface-color-tertiary-inverse-hover: var(--cd-color-surface-ghost-hover);
+  --cd-button-surface-color-tertiary-inverse-active: var(--cd-color-surface-primary-active);
+  --cd-button-surface-color-tertiary-inverse-active-hover: var(--cd-color-surface-ghost-hover);
 
   /* BUTTON BORDER COLOR */
   /* PRIMARY BUTTON BORDER COLOR */
-  --cd-button-border-color-primary: var(--cd-color-border-primary);
+  --cd-button-border-color-primary: var(--cd-color-border-primary-default);
   --cd-button-border-color-primary-disabled: var(--cd-color-border-disabled);
-  --cd-button-border-color-primary-hover: var(--cd-color-border-primary-tint);
-  --cd-button-border-color-primary-active: var(--cd-color-border-primary);
-  --cd-button-border-color-primary-active-hover: var(--cd-color-border-primary-tint);
+  --cd-button-border-color-primary-hover: var(--cd-color-border-primary-hover);
+  --cd-button-border-color-primary-active: var(--cd-color-border-primary-default);
+  --cd-button-border-color-primary-active-hover: var(--cd-color-border-primary-hover);
 
   /* PRIMARY INVERSE BUTTON BORDER COLOR */
-  --cd-button-border-color-primary-inverse: var(--cd-color-border-primary);
+  --cd-button-border-color-primary-inverse: var(--cd-color-border-primary-default);
   --cd-button-border-color-primary-inverse-disabled: var(--cd-color-border-disabled);
-  --cd-button-border-color-primary-inverse-hover: var(--cd-color-border-primary-tint);
-  --cd-button-border-color-primary-inverse-active: var(--cd-color-border-primary);
-  --cd-button-border-color-primary-inverse-active-hover: var(--cd-color-border-primary-tint);
+  --cd-button-border-color-primary-inverse-hover: var(--cd-color-border-primary-hover);
+  --cd-button-border-color-primary-inverse-active: var(--cd-color-border-primary-default);
+  --cd-button-border-color-primary-inverse-active-hover: var(--cd-color-border-primary-hover);
 
   /* SECONDARY BUTTON BORDER COLOR */
-  --cd-button-border-color-secondary: var(--cd-color-border-secondary);
+  --cd-button-border-color-secondary: var(--cd-color-border-secondary-default);
   --cd-button-border-color-secondary-disabled: var(--cd-color-border-disabled);
-  --cd-button-border-color-secondary-hover: var(--cd-color-border-secondary-tint);
-  --cd-button-border-color-secondary-active: var(--cd-color-border-secondary);
-  --cd-button-border-color-secondary-active-hover: var(--cd-color-border-secondary-tint);
+  --cd-button-border-color-secondary-hover: var(--cd-color-border-secondary-hover);
+  --cd-button-border-color-secondary-active: var(--cd-color-border-secondary-default);
+  --cd-button-border-color-secondary-active-hover: var(--cd-color-border-secondary-hover);
 
   /* SECONDARY INVERSE BUTTON BORDER COLOR */
-  --cd-button-border-color-secondary-inverse: var(--cd-color-border-secondary);
+  --cd-button-border-color-secondary-inverse: var(--cd-color-border-secondary-default);
   --cd-button-border-color-secondary-inverse-disabled: var(--cd-color-border-disabled);
-  --cd-button-border-color-secondary-inverse-hover: var(--cd-color-border-secondary-tint);
-  --cd-button-border-color-secondary-inverse-active: var(--cd-color-border-secondary);
-  --cd-button-border-color-secondary-inverse-active-hover: var(--cd-color-border-secondary-tint);
+  --cd-button-border-color-secondary-inverse-hover: var(--cd-color-border-secondary-hover);
+  --cd-button-border-color-secondary-inverse-active: var(--cd-color-border-secondary-default);
+  --cd-button-border-color-secondary-inverse-active-hover: var(--cd-color-border-secondary-hover);
 
   /* TERTIARY BUTTON BORDER COLOR */
-  --cd-button-border-color-tertiary: var(--cd-color-border-tertiary);
+  --cd-button-border-color-tertiary: var(--cd-color-border-tertiary-default);
   --cd-button-border-color-tertiary-disabled: var(--cd-color-border-disabled);
-  --cd-button-border-color-tertiary-hover: var(--cd-color-border-tertiary-tint);
-  --cd-button-border-color-tertiary-active: var(--cd-color-border-tertiary);
-  --cd-button-border-color-tertiary-active-hover: var(--cd-color-border-tertiary-tint);
+  --cd-button-border-color-tertiary-hover: var(--cd-color-border-tertiary-hover);
+  --cd-button-border-color-tertiary-active: var(--cd-color-border-tertiary-default);
+  --cd-button-border-color-tertiary-active-hover: var(--cd-color-border-tertiary-hover);
 
   /* TERTIARY INVERSE BUTTON BORDER COLOR */
-  --cd-button-border-color-tertiary-inverse: var(--cd-color-border-tertiary);
+  --cd-button-border-color-tertiary-inverse: var(--cd-color-border-tertiary-default);
   --cd-button-border-color-tertiary-inverse-disabled: var(--cd-color-border-disabled);
-  --cd-button-border-color-tertiary-inverse-hover: var(--cd-color-border-tertiary-tint);
-  --cd-button-border-color-tertiary-inverse-active: var(--cd-color-border-tertiary);
-  --cd-button-border-color-tertiary-inverse-active-hover: var(--cd-color-border-tertiary-tint);
+  --cd-button-border-color-tertiary-inverse-hover: var(--cd-color-border-tertiary-hover);
+  --cd-button-border-color-tertiary-inverse-active: var(--cd-color-border-tertiary-default);
+  --cd-button-border-color-tertiary-inverse-active-hover: var(--cd-color-border-tertiary-hover);
 
   /* BUTTON SIZING */
   /* BUTTON BORDER SIZE */
@@ -438,30 +472,6 @@
   --cd-button-border-style: solid;
 
   /* STACK */
-  /* PRIMARY STACK SURFACE COLOR */
-  --cd-stack-surface-color-primary: var(--cd-color-surface-primary);
-  --cd-stack-surface-color-primary-inverse: transparent;
-  --cd-stack-border-color-primary: var(--cd-color-border-primary);
-  --cd-stack-border-color-primary-inverse: transparent;
-
-  /* SECONDARY STACK SURFACE COLOR */
-  --cd-stack-surface-color-secondary: var(--cd-color-surface-secondary);
-  --cd-stack-surface-color-secondary-inverse: transparent;
-  --cd-stack-border-color-secondary: var(--cd-color-border-secondary);
-  --cd-stack-border-color-secondary-inverse: transparent;
-
-  /* TERTIARY STACK SURFACE COLOR */
-  --cd-stack-surface-color-tertiary: var(--cd-color-surface-tertiary);
-  --cd-stack-surface-color-tertiary-inverse: transparent;
-  --cd-stack-border-color-tertiary: var(--cd-color-border-tertiary);
-  --cd-stack-border-color-tertiary-inverse: transparent;
-
-  /* NEUTRAL STACK SURFACE COLOR */
-  --cd-stack-surface-color-neutral: var(--cd-color-surface-neutral);
-  --cd-stack-surface-color-neutral-inverse: transparent;
-  --cd-stack-border-color-neutral: var(--cd-color-border-neutral);
-  --cd-stack-border-color-neutral-inverse: transparent;
-
   /* STACK SPACING */
   /* STACK MARGINS */
   --cd-stack-margin-top-none: var(--cd-spacing-0);
@@ -540,27 +550,27 @@
 
   /* BOX */
   /* PRIMARY BOX SURFACE COLOR */
-  --cd-box-surface-color-primary: var(--cd-color-surface-primary);
+  --cd-box-surface-color-primary: var(--cd-color-surface-primary-default);
   --cd-box-surface-color-primary-inverse: transparent;
-  --cd-box-border-color-primary: var(--cd-color-border-primary);
+  --cd-box-border-color-primary: var(--cd-color-border-primary-default);
   --cd-box-border-color-primary-inverse: transparent;
 
   /* SECONDARY BOX SURFACE COLOR */
-  --cd-box-surface-color-secondary: var(--cd-color-surface-secondary);
+  --cd-box-surface-color-secondary: var(--cd-color-surface-secondary-default);
   --cd-box-surface-color-secondary-inverse: transparent;
-  --cd-box-border-color-secondary: var(--cd-color-border-secondary);
+  --cd-box-border-color-secondary: var(--cd-color-border-secondary-default);
   --cd-box-border-color-secondary-inverse: transparent;
 
   /* TERTIARY BOX SURFACE COLOR */
-  --cd-box-surface-color-tertiary: var(--cd-color-surface-tertiary);
+  --cd-box-surface-color-tertiary: var(--cd-color-surface-tertiary-default);
   --cd-box-surface-color-tertiary-inverse: transparent;
-  --cd-box-border-color-tertiary: var(--cd-color-border-tertiary);
+  --cd-box-border-color-tertiary: var(--cd-color-border-tertiary-default);
   --cd-box-border-color-tertiary-inverse: transparent;
 
   /* NEUTRAL BOX SURFACE COLOR */
   --cd-box-surface-color-neutral: var(--cd-color-surface-neutral);
   --cd-box-surface-color-neutral-inverse: transparent;
-  --cd-box-border-color-neutral: var(--cd-color-border-neutral);
+  --cd-box-border-color-neutral: var(--cd-color-border-neutral-default);
   --cd-box-border-color-neutral-inverse: transparent;
 
   /* BOX SPACING */

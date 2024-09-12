@@ -7,28 +7,53 @@ import Box from "@/components/Box/Box";
 export default function Home() {
   return (
     <main>
-      <Box color="neutral" rounding="square" padding="xs">
-        <Stack>
-          <Button color="primary" hierarchy="contained" size="md"> Primary Contained </Button>
-          <Button color="primary" hierarchy="outlined" size="md"> Primary Outlined </Button>
-          <Button color="primary" hierarchy="ghost" size="md"> Primary Ghost </Button>
-          <Button color="secondary" hierarchy="contained" size="md"> Secondary Contained </Button>
-          <Button color="secondary" hierarchy="outlined" size="md"> Secondary Outlined </Button>
-          <Button color="secondary" hierarchy="ghost" size="md"> Secondary Ghost </Button>
-          <Button color="tertiary" hierarchy="contained" size="md"> Tertiary Contained </Button>
-          <Button color="tertiary" hierarchy="outlined" size="md"> Tertiary Outlined </Button>
-          <Button color="tertiary" hierarchy="ghost" size="md"> Tertiary Ghost </Button>
-        </Stack>
-      </Box>
       <Box color="neutral" hierarchy="ghost" padding="md">
-        <Stack>
-          <Box height="sm">
-            <Stack>
-              <Button color="secondary"> test </Button>
+        <Box hierarchy="ghost" padding="sm">
+          <Stack crossDirectionalAlign="flex-start">
+            <Stack direction="column">
+              <Box height="auto" padding="sm">
+                <Stack direction="column">
+                  <Button color="secondary"> Secondary </Button>
+                  <Button color="secondary" hierarchy="outlined"> secondary ghost </Button>
+                  <Button color="secondary" hierarchy="ghost"> secondary ghost </Button>
+                </Stack>
+              </Box>
+              <Box color="primary" hierarchy="ghost" height="auto" padding="sm">
+                <Stack direction="column">
+                  <Button color="primary"> primary </Button>
+                  <Button color="primary" hierarchy="outlined"> primary ghost </Button>
+                  <Button color="primary" hierarchy="ghost"> primary ghost </Button>
+                </Stack>
+              </Box>
             </Stack>
-          </Box>
-          <Box color="secondary" hierarchy="outlined" height="sm" />
-        </Stack>
+            <Box color="secondary" hierarchy="contained" height="auto" padding="sm">
+              <Stack direction="column">
+                <Button color="primary"> Secondary </Button>
+                <Button color="primary" hierarchy="outlined"> secondary ghost </Button>
+                <Button color="primary" hierarchy="ghost"> secondary ghost </Button>
+                <Button color="tertiary"> Secondary </Button>
+                <Button color="tertiary" hierarchy="outlined"> secondary ghost </Button>
+                <Button color="tertiary" hierarchy="ghost"> secondary ghost </Button>
+              </Stack>
+            </Box>
+            <Stack direction="column">
+              <Box color="tertiary" hierarchy="contained" height="auto" padding="sm">
+                <Stack direction="column">
+                  <Button color="secondary"> Secondary </Button>
+                  <Button color="secondary" hierarchy="outlined"> secondary ghost </Button>
+                  <Button color="secondary" hierarchy="ghost"> secondary ghost </Button>
+                </Stack>
+              </Box>
+              <Box color="tertiary" hierarchy="ghost" height="auto" padding="sm">
+                <Stack direction="column">
+                  <Button color="tertiary"> tertiary </Button>
+                  <Button color="tertiary" hierarchy="outlined"> tertiary ghost </Button>
+                  <Button color="tertiary" hierarchy="ghost"> tertiary ghost </Button>
+                </Stack>
+              </Box>
+            </Stack>
+          </Stack>
+        </Box>
       </Box>
     </main>
   );
