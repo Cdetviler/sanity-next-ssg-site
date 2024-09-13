@@ -79,7 +79,7 @@
 
 .primaryOutline:hover {
     color: var(--cd-button-text-color-primary-inverse);
-    background-color: var(--cd-button-surface-color-primary-inverse);
+    background-color: var(--cd-button-surface-color-primary-inverse-hover);
     border-color: var(--cd-button-border-color-primary-inverse);
 }
 
@@ -116,7 +116,7 @@
 
 .primaryGhost:hover {
     color: var(--cd-button-text-color-primary-inverse);
-    background-color: var(--cd-button-surface-color-primary-inverse);
+    background-color: var(--cd-button-surface-color-primary-inverse-hover);
     border-color: transparent;
 }
 
@@ -190,7 +190,7 @@
 
 .secondaryOutline:hover {
     color: var(--cd-button-text-color-secondary-inverse);
-    background-color: var(--cd-button-surface-color-secondary-inverse);
+    background-color: var(--cd-button-surface-color-secondary-inverse-hover);
     border-color: var(--cd-button-border-color-secondary-inverse);
 }
 
@@ -227,7 +227,7 @@
 
 .secondaryGhost:hover {
     color: var(--cd-button-text-color-secondary-inverse);
-    background-color: var(--cd-button-surface-color-secondary-inverse);
+    background-color: var(--cd-button-surface-color-secondary-inverse-hover);
     border-color: transparent;
 }
 
@@ -301,7 +301,7 @@
 
 .tertiaryOutline:hover {
     color: var(--cd-button-text-color-tertiary-inverse);
-    background-color: var(--cd-button-surface-color-tertiary-inverse);
+    background-color: var(--cd-button-surface-color-tertiary-inverse-hover);
     border-color: var(--cd-button-border-color-tertiary-inverse);
 }
 
@@ -338,7 +338,7 @@
 
 .tertiaryGhost:hover {
     color: var(--cd-button-text-color-tertiary-inverse);
-    background-color: var(--cd-button-surface-color-tertiary-inverse);
+    background-color: var(--cd-button-surface-color-tertiary-inverse-hover);
     border-color: transparent;
 }
 
