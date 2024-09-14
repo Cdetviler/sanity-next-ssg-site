@@ -1,0 +1,140 @@
+@import "/styles/mixins";
+
+.heading {
+    margin: 0;
+    padding: 0;
+}
+
+.primary {
+    color: var(--cd-heading-text-color-primary);
+}
+
+.secondary {
+    color: var(--cd-heading-text-color-secondary);
+}
+
+.tertiary {
+    color: var(--cd-heading-text-color-tertiary);
+}
+
+.neutral-light {
+    color: var(--cd-heading-text-color-neutral-light);
+}
+
+.neutral-dark {
+    color: var(--cd-heading-text-color-neutral-dark);
+}
+
+.h1 {
+    font-size: var(--cd-heading-font-size-h1-mobile);
+    font-family: var(--cd-heading-font-family-h1);
+    font-weight: var(--cd-heading-font-weight-h1);
+    line-height: var(--cd-heading-line-height-h1);
+    margin: var(--cd-heading-margin-combined-h1-mobile);
+
+    @include device-size(tablet) {
+        font-size: var(--cd-heading-font-size-h1-tablet);
+        margin: var(--cd-heading-margin-combined-h1-tablet);
+
+    }
+
+    @include device-size(desktop) {
+        font-size: var(--cd-heading-font-size-h1-desktop);
+        margin: var(--cd-heading-margin-combined-h1-desktop);
+
+    }
+}
+
+.h2 {
+    font-size: var(--cd-heading-font-size-h2-mobile);
+    font-family: var(--cd-heading-font-family-h2);
+    font-weight: var(--cd-heading-font-weight-h2);
+    line-height: var(--cd-heading-line-height-h2);
+    margin: var(--cd-heading-margin-combined-h2-mobile);
+
+    @include device-size(tablet) {
+        font-size: var(--cd-heading-font-size-h2-tablet);
+        margin: var(--cd-heading-margin-combined-h2-tablet);
+    }
+
+    @include device-size(desktop) {
+        font-size: var(--cd-heading-font-size-h2-desktop);
+        margin: var(--cd-heading-margin-combined-h2-desktop);
+    }
+}
+
+.h3 {
+    font-size: var(--cd-heading-font-size-h3-mobile);
+    font-family: var(--cd-heading-font-family-h3);
+    font-weight: var(--cd-heading-font-weight-h3);
+    line-height: var(--cd-heading-line-height-h3);
+    margin: var(--cd-heading-margin-combined-h3-mobile);
+
+    @include device-size(tablet) {
+        font-size: var(--cd-heading-font-size-h3-tablet);
+        margin: var(--cd-heading-margin-combined-h3-tablet);
+    }
+
+    @include device-size(desktop) {
+        font-size: var(--cd-heading-font-size-h3-desktop);
+        margin: var(--cd-heading-margin-combined-h3-desktop);
+    }
+}
+
+.h4 {
+    font-size: var(--cd-heading-font-size-h4-mobile);
+    font-family: var(--cd-heading-font-family-h4);
+    font-weight: var(--cd-heading-font-weight-h4);
+    line-height: var(--cd-heading-line-height-h4);
+    margin: var(--cd-heading-margin-combined-h4-mobile);
+
+    @include device-size(tablet) {
+        font-size: var(--cd-heading-font-size-h4-tablet);
+        margin: var(--cd-heading-margin-combined-h4-tablet);
+    }
+
+    @include device-size(desktop) {
+        font-size: var(--cd-heading-font-size-h4-desktop);
+        margin: var(--cd-heading-margin-combined-h4-desktop);
+    }
+}
+
+.h5 {
+    font-size: var(--cd-heading-font-size-h5-mobile);
+    font-family: var(--cd-heading-font-family-h5);
+    font-weight: var(--cd-heading-font-weight-h5);
+    line-height: var(--cd-heading-line-height-h5);
+    margin: var(--cd-heading-margin-combined-h5-mobile);
+
+    @include device-size(tablet) {
+        font-size: var(--cd-heading-font-size-h5-tablet);
+        margin: var(--cd-heading-margin-combined-h5-tablet);
+    }
+
+    @include device-size(desktop) {
+        font-size: var(--cd-heading-font-size-h5-desktop);
+        margin: var(--cd-heading-margin-combined-h5-desktop);
+    }
+}
+
+.h6 {
+    font-size: var(--cd-heading-font-size-h6-mobile);
+    font-family: var(--cd-heading-font-family-h6);
+    font-weight: var(--cd-heading-font-weight-h6);
+    line-height: var(--cd-heading-line-height-h6);
+    margin: var(--cd-heading-margin-combined-h6-mobile);
+
+    @include device-size(tablet) {
+        font-size: var(--cd-heading-font-size-h6-tablet);
+        margin: var(--cd-heading-margin-combined-h6-tablet);
+    }
+
+    @include device-size(desktop) {
+        font-size: var(--cd-heading-font-size-h6-desktop);
+        margin: var(--cd-heading-margin-combined-h6-desktop);
+    }
+}
+
+.noSpacing {
+    margin: 0;
+}
