@@ -187,11 +187,11 @@
   --cd-color-primary-lighter: var(--cd-color-mint-700);
   --cd-color-primary-lightest: var(--cd-color-mint-600);
   /* Complementary to the primary color and is on the lighter side of its generated color palette */
-  --cd-color-secondary-darkest: var(--cd-color-mint-400);
-  --cd-color-secondary-darker: var(--cd-color-mint-300);
-  --cd-color-secondary-default: var(--cd-color-mint-100);
-  --cd-color-secondary-lighter: var(--cd-color-mint-100);
-  --cd-color-secondary-lightest: var(--cd-color-mint-100);
+  --cd-color-secondary-darkest: var(--cd-color-mint-300);
+  --cd-color-secondary-darker: var(--cd-color-mint-200);
+  --cd-color-secondary-default: var(--cd-color-mint-50);
+  --cd-color-secondary-lighter: var(--cd-color-mint-50);
+  --cd-color-secondary-lightest: var(--cd-color-mint-50);
   /*  Analogous to the primary color and is on the darker side of its generated color palette */
   --cd-color-tertiary-darkest: var(--cd-color-hotpink-900);
   --cd-color-tertiary-darker: var(--cd-color-hotpink-900);

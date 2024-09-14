@@ -25,6 +25,18 @@
     color: var(--cd-heading-text-color-neutral-dark);
 }
 
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+.center {
+    text-align: center;
+}
+
 .h1 {
     font-size: var(--cd-heading-font-size-h1-mobile);
     font-family: var(--cd-heading-font-family-h1);

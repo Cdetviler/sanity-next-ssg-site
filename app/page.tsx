@@ -4,11 +4,28 @@ import Button from "@/components/Button/Button";
 import Stack from "@/components/Stack/Stack";
 import Box from "@/components/Box/Box";
 import Heading from "@/components/Heading/Heading";
+import BackgroundImage from "@/components/BackgroundImage/BackgroundImage";
 
 export default function Home() {
   return (
     <main>
+      <Box hierarchy="ghost" padding="none" width="full" height="sm">
+        <BackgroundImage
+          paralax="fixed"
+          backgroundDarkness="darker"
+          src="https://images.unsplash.com/photo-1511884642898-4c92249e20b6?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="boat in the dessert"
+        >
+          <Box hierarchy="ghost" padding="xl" height="full">
+            <Stack gap="none" direction="column" directionalAlign="center" crossDirectionalAlign="center" containerAlign="center">
+              <Heading color="secondary" spacing={false}>Charlie Detviler</Heading>
+              <Heading tag="h3" color="neutral-light">Lead Developer</Heading>
+            </Stack>
+          </Box>
+        </BackgroundImage>
+      </Box>
       <Box color="neutral" hierarchy="ghost" padding="md">
+        
         <Box hierarchy="ghost" padding="sm">
           <Stack crossDirectionalAlign="flex-start">
             <Stack direction="column">
@@ -56,7 +73,7 @@ export default function Home() {
           </Stack>
         </Box>
         <Box hierarchy="ghost" padding="sm">
-          <Stack crossDirectionalAlign="flex-start">
+          <Stack crossDirectionalAlign="stretch">
             <Box hierarchy="ghost" padding="sm" height="auto">
               <Heading>Heading 1 Primary</Heading>
               <Heading tag="h2">Heading 2 Primary</Heading>
@@ -65,7 +82,7 @@ export default function Home() {
               <Heading tag="h5">Heading 5 Primary</Heading>
               <Heading tag="h6">Heading 6 Primary</Heading>
             </Box>
-            <Box color="primary" padding="sm" height="auto">
+            <Box color="tertiary" padding="sm" height="auto">
               <Heading color="secondary">Heading 1 Secondary</Heading>
               <Heading color="secondary" tag="h2">Heading 2 Secondary</Heading>
               <Heading color="secondary" tag="h3">Heading 3 Secondary</Heading>
@@ -73,7 +90,7 @@ export default function Home() {
               <Heading color="secondary" tag="h5">Heading 5 Secondary</Heading>
               <Heading color="secondary" tag="h6">Heading 6 Secondary</Heading>
             </Box>
-            <Box hierarchy="ghost" padding="sm" height="auto">
+            <Box color="secondary" padding="sm" height="auto">
               <Heading color="tertiary">Heading 1 Tertiary</Heading>
               <Heading color="tertiary" tag="h2">Heading 2 Tertiary</Heading>
               <Heading color="tertiary" tag="h3">Heading 3 Tertiary</Heading>
@@ -94,12 +111,12 @@ export default function Home() {
               <Heading color="neutral-light" tag="h6">Heading 6 Neutral Light</Heading>
             </Box>
             <Box hierarchy="ghost" padding="sm" height="auto">
-              <Heading color="neutral-dark">Heading 1 Neutral Dark</Heading>
-              <Heading color="neutral-dark" tag="h2">Heading 2 Neutral Dark</Heading>
-              <Heading color="neutral-dark" tag="h3">Heading 3 Neutral Dark</Heading>
-              <Heading color="neutral-dark" tag="h4">Heading 4 Neutral Dark</Heading>
-              <Heading color="neutral-dark" tag="h5">Heading 5 Neutral Dark</Heading>
-              <Heading color="neutral-dark" tag="h6">Heading 6 Neutral Dark</Heading>
+              <Heading textAlign="right" color="neutral-dark">Heading 1 Neutral Dark</Heading>
+              <Heading textAlign="right" color="neutral-dark" tag="h2">Heading 2 Neutral Dark</Heading>
+              <Heading textAlign="right" color="neutral-dark" tag="h3">Heading 3 Neutral Dark</Heading>
+              <Heading textAlign="right" color="neutral-dark" tag="h4">Heading 4 Neutral Dark</Heading>
+              <Heading textAlign="right" color="neutral-dark" tag="h5">Heading 5 Neutral Dark</Heading>
+              <Heading textAlign="right" color="neutral-dark" tag="h6">Heading 6 Neutral Dark</Heading>
             </Box>
           </Stack>
         </Box>
