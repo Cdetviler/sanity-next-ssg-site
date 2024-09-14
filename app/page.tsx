@@ -3,6 +3,7 @@ import styles from "./page.module.css";
 import Button from "@/components/Button/Button";
 import Stack from "@/components/Stack/Stack";
 import Box from "@/components/Box/Box";
+import Heading from "@/components/Heading/Heading";
 
 export default function Home() {
   return (
@@ -52,6 +53,54 @@ export default function Home() {
                 </Stack>
               </Box>
             </Stack>
+          </Stack>
+        </Box>
+        <Box hierarchy="ghost" padding="sm">
+          <Stack crossDirectionalAlign="flex-start">
+            <Box hierarchy="ghost" padding="sm" height="auto">
+              <Heading>Heading 1 Primary</Heading>
+              <Heading tag="h2">Heading 2 Primary</Heading>
+              <Heading tag="h3">Heading 3 Primary</Heading>
+              <Heading tag="h4">Heading 4 Primary</Heading>
+              <Heading tag="h5">Heading 5 Primary</Heading>
+              <Heading tag="h6">Heading 6 Primary</Heading>
+            </Box>
+            <Box color="primary" padding="sm" height="auto">
+              <Heading color="secondary">Heading 1 Secondary</Heading>
+              <Heading color="secondary" tag="h2">Heading 2 Secondary</Heading>
+              <Heading color="secondary" tag="h3">Heading 3 Secondary</Heading>
+              <Heading color="secondary" tag="h4">Heading 4 Secondary</Heading>
+              <Heading color="secondary" tag="h5">Heading 5 Secondary</Heading>
+              <Heading color="secondary" tag="h6">Heading 6 Secondary</Heading>
+            </Box>
+            <Box hierarchy="ghost" padding="sm" height="auto">
+              <Heading color="tertiary">Heading 1 Tertiary</Heading>
+              <Heading color="tertiary" tag="h2">Heading 2 Tertiary</Heading>
+              <Heading color="tertiary" tag="h3">Heading 3 Tertiary</Heading>
+              <Heading color="tertiary" tag="h4">Heading 4 Tertiary</Heading>
+              <Heading color="tertiary" tag="h5">Heading 5 Tertiary</Heading>
+              <Heading color="tertiary" tag="h6">Heading 6 Tertiary</Heading>
+            </Box>
+          </Stack>
+        </Box>
+        <Box hierarchy="ghost" padding="sm">
+          <Stack crossDirectionalAlign="flex-start">
+            <Box color="primary" padding="sm" height="auto">
+              <Heading color="neutral-light">Heading 1 Neutral Light</Heading>
+              <Heading color="neutral-light" tag="h2">Heading 2 Neutral Light</Heading>
+              <Heading color="neutral-light" tag="h3">Heading 3 Neutral Light</Heading>
+              <Heading color="neutral-light" tag="h4">Heading 4 Neutral Light</Heading>
+              <Heading color="neutral-light" tag="h5">Heading 5 Neutral Light</Heading>
+              <Heading color="neutral-light" tag="h6">Heading 6 Neutral Light</Heading>
+            </Box>
+            <Box hierarchy="ghost" padding="sm" height="auto">
+              <Heading color="neutral-dark">Heading 1 Neutral Dark</Heading>
+              <Heading color="neutral-dark" tag="h2">Heading 2 Neutral Dark</Heading>
+              <Heading color="neutral-dark" tag="h3">Heading 3 Neutral Dark</Heading>
+              <Heading color="neutral-dark" tag="h4">Heading 4 Neutral Dark</Heading>
+              <Heading color="neutral-dark" tag="h5">Heading 5 Neutral Dark</Heading>
+              <Heading color="neutral-dark" tag="h6">Heading 6 Neutral Dark</Heading>
+            </Box>
           </Stack>
         </Box>
       </Box>

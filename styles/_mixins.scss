@@ -1,3 +1,5 @@
+@use "sass:map";
+
 $flexDirections: ('row', 'row-reverse', 'column', 'column-reverse');
 $flexJustifyContentValues: ('flex-start', 'flex-end', 'center', 'space-between', 'space-around', 'space-evenly');
 $flexAlignItemsValues: ('stretch', 'flex-start', 'flex-end', 'center');
@@ -23,6 +25,18 @@ $mediaQuerySizes: (
   'lg': '(min-width: #{1200px}) and (max-width: #{1535px})',
   'xl': '(min-width: #{1536px})',
 );
+
+@mixin device-size($size) {
+  @if $size == phone {
+    @media (#{map.get($mediaQuerySizes, 'xs')}) { @content; }
+  } @else if $size == tablet {
+    @media (#{map.get($mediaQuerySizes, 'sm')}) { @content; }
+    @media (#{map.get($mediaQuerySizes, 'md')}) { @content; }
+  } @else if $size == desktop {
+    @media (#{map.get($mediaQuerySizes, 'lg')}) { @content; }
+    @media (#{map.get($mediaQuerySizes, 'xl')}) { @content; }
+  }
+}
 
 @mixin generate-flex-properties() {
   @each $flexProperty, $values in $flexProperties {
