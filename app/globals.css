@@ -19,6 +19,12 @@
   --cd-width-lg: 1200px;
   --cd-width-xl: 1536px;
 
+  --cd-size-xs: 320px;
+  --cd-size-sm: 600px;
+  --cd-size-md: 900px;
+  --cd-size-lg: 1200px;
+  --cd-size-xl: 1536px;
+
   /* BORDER SIZE SCALE */
   --cd-border-width-0: 0px;
   --cd-border-width-1: 1px;
@@ -845,6 +851,22 @@
   --cd-heading-line-height-h4: var(--cd-line-height-md);
   --cd-heading-line-height-h5: var(--cd-line-height-md);
   --cd-heading-line-height-h6: var(--cd-line-height-md);
+
+  /* ICON */
+  /* COLOR */
+  --cd-icon-color-primary: var(--cd-color-text-primary-default);
+  --cd-icon-color-secondary: var(--cd-color-text-secondary-default);
+  --cd-icon-color-tertiary: var(--cd-color-text-tertiary-default);
+  --cd-icon-color-neutral-light: var(--cd-color-text-neutral-default);
+  --cd-icon-color-neutral-dark: var(--cd-color-text-neutral-inverse-default);
+
+  /* SIZES */
+  --cd-icon-size-xs: var(--cd-font-size-10);
+  --cd-icon-size-sm: var(--cd-font-size-20);
+  --cd-icon-size-md: var(--cd-font-size-30);
+  --cd-icon-size-lg: var(--cd-font-size-40);
+  --cd-icon-size-xl: var(--cd-font-size-50);
+
 }
 
 body {

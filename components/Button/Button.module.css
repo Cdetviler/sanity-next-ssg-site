@@ -2,6 +2,7 @@
     appearance: none;
     background: none;
     display: flex;
+    align-items: center;
     text-transform: var(--cd-button-font-transform);
     border-radius: var(--cd-button-border-radius);
     border-style: var(--cd-button-border-style);
