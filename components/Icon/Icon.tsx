@@ -20,11 +20,14 @@ export default function Icon({
     }
 
     let sizeClass = '';
-    if (VALID_SIZES.includes(size)) {
+    let finalSize = undefined;
+    if (typeof size === 'string' && VALID_SIZES.includes(size)) {
         sizeClass = styles[size];
+    } else if (typeof size === 'number') {
+        finalSize = size;
     }
-    console.log(sizeClass);
+
     const finalClassName = `${colorClass} ${className} ${sizeClass} `;
 
-    return <LucidIcon className={finalClassName} />
+    return <LucidIcon className={finalClassName} size={finalSize}/>
 }
