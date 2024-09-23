@@ -1,0 +1,48 @@
+.primary {
+    color: var(--cd-icon-color-primary);
+}
+
+.secondary {
+    color: var(--cd-icon-color-secondary);
+}
+
+.tertiary {
+    color: var(--cd-icon-color-tertiary);
+}
+
+.neutral-light {
+    color: var(--cd-icon-color-neutral-light);
+}
+
+.neutral-dark {
+    color: var(--cd-icon-color-neutral-dark);
+}
+
+.inherit {
+    color: inherit;
+}
+
+.xs {
+    width: var(--cd-icon-size-xs);
+    height: var(--cd-icon-size-xs);
+}
+
+.sm {
+    width: var(--cd-icon-size-sm);
+    height: var(--cd-icon-size-sm);
+}
+
+.md {
+    width: var(--cd-icon-size-md);
+    height: var(--cd-icon-size-md);
+}
+
+.lg {
+    width: var(--cd-icon-size-lg);
+    height: var(--cd-icon-size-lg);
+}
+
+.xl {
+    width: var(--cd-icon-size-xl);
+    height: var(--cd-icon-size-xl);
+}

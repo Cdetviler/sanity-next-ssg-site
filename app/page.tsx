@@ -5,6 +5,7 @@ import Stack from "@/components/Stack/Stack";
 import Box from "@/components/Box/Box";
 import Heading from "@/components/Heading/Heading";
 import BackgroundImage from "@/components/BackgroundImage/BackgroundImage";
+import Icon from "@/components/Icon/Icon";
 
 export default function Home() {
   return (
@@ -31,15 +32,15 @@ export default function Home() {
             <Stack direction="column">
               <Box height="auto" padding="sm">
                 <Stack direction="column">
-                  <Button color="secondary"> Secondary </Button>
-                  <Button color="secondary" hierarchy="outlined"> secondary ghost </Button>
-                  <Button color="secondary" hierarchy="ghost"> secondary ghost </Button>
+                  <Button color="secondary"> Secondary <Icon size="md" type="ArrowBigRightDash"/></Button>
+                  <Button color="secondary" hierarchy="outlined"> secondary Outlined <Icon size="md" type="ArrowBigRightDash"/></Button>
+                  <Button color="secondary" hierarchy="ghost"> secondary ghost <Icon size="md" type="ArrowBigRightDash"/></Button>
                 </Stack>
               </Box>
               <Box color="primary" hierarchy="ghost" height="auto" padding="sm">
                 <Stack direction="column">
                   <Button color="primary"> primary </Button>
-                  <Button color="primary" hierarchy="outlined"> primary ghost </Button>
+                  <Button color="primary" hierarchy="outlined"> primary Outlined </Button>
                   <Button color="primary" hierarchy="ghost"> primary ghost </Button>
                 </Stack>
               </Box>
@@ -47,11 +48,11 @@ export default function Home() {
             <Box color="secondary" hierarchy="contained" height="auto" padding="sm">
               <Stack direction="column">
                 <Button color="primary"> Secondary </Button>
-                <Button color="primary" hierarchy="outlined"> secondary ghost </Button>
+                <Button color="primary" hierarchy="outlined"> secondary outlined </Button>
                 <Button color="primary" hierarchy="ghost"> secondary ghost </Button>
-                <Button color="tertiary"> Secondary </Button>
-                <Button color="tertiary" hierarchy="outlined"> secondary ghost </Button>
-                <Button color="tertiary" hierarchy="ghost"> secondary ghost </Button>
+                <Button color="tertiary"> tertiary </Button>
+                <Button color="tertiary" hierarchy="outlined"> tertiary outlined </Button>
+                <Button color="tertiary" hierarchy="ghost"> tertiary ghost </Button>
               </Stack>
             </Box>
             <Stack direction="column">
@@ -65,7 +66,7 @@ export default function Home() {
               <Box color="tertiary" hierarchy="ghost" height="auto" padding="sm">
                 <Stack direction="column">
                   <Button color="tertiary"> tertiary </Button>
-                  <Button color="tertiary" hierarchy="outlined"> tertiary ghost </Button>
+                  <Button color="tertiary" hierarchy="outlined"> tertiary outlined </Button>
                   <Button color="tertiary" hierarchy="ghost"> tertiary ghost </Button>
                 </Stack>
               </Box>
