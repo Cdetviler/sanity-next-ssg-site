@@ -1,5 +1,5 @@
 type iconColor = 'primary' | 'secondary' | 'tertiary' | 'neutral-light' | 'neutral-dark' | 'inherit';
-type iconSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'inherit' | number;
+type iconSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'none' | number;
 type iconType = 
 'CircleAlert' |
 'Menu' | 

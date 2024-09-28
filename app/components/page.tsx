@@ -33,8 +33,8 @@ export default function Home() {
               <Box height="auto" padding="sm">
                 <Stack direction="column" crossDirectionalAlign="flex-start">
                   <Button color="secondary"> Secondary <Icon size="md" type="ArrowBigRightDash"/></Button>
-                  <Button color="secondary" hierarchy="outlined"> secondary Outlined <Icon size="md" type="ArrowBigRightDash"/></Button>
-                  <Button color="secondary" hierarchy="ghost"> secondary ghost <Icon size="md" type="ArrowBigRightDash"/></Button>
+                  <Button color="secondary" hierarchy="outlined"> secondary Outlined <Icon type="ArrowBigRightDash"/></Button>
+                  <Button color="secondary" hierarchy="ghost"> secondary ghost <Icon type="ArrowBigRightDash"/></Button>
                 </Stack>
               </Box>
               <Box color="primary" hierarchy="ghost" height="auto" padding="sm">
@@ -46,7 +46,7 @@ export default function Home() {
               </Box>
             </Stack>
             <Box color="secondary" hierarchy="contained" height="auto" padding="sm">
-              <Stack direction="column">
+              <Stack direction="column" crossDirectionalAlign="stretch">
                 <Button color="primary"> Secondary </Button>
                 <Button color="primary" hierarchy="outlined"> secondary outlined </Button>
                 <Button color="primary" hierarchy="ghost"> secondary ghost </Button>

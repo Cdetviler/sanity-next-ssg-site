@@ -1,6 +1,6 @@
 :root {
-  --cd-font-family-sans-serif: Arial, Helvetica, sans-serif;
-  --cd-font-family-serif: Georgia, 'Times New Roman', Times, serif;
+  --cd-font-family-title: var(--font-agency), Arial, Helvetica, sans-serif;
+  --cd-font-family-body: var(--font-alegreya), Georgia, 'Times New Roman', Times, serif;
   --cd-breakpoint-xs: 0px;
   --cd-breakpoint-sm: 600px;
   --cd-breakpoint-md: 900px;
@@ -56,15 +56,15 @@
   --cd-spacing-900: 8rem;
 
   /* FONT SIZE SCALE */
-  --cd-font-size-10: 0.694rem;
-  --cd-font-size-20: 0.833rem;
+  --cd-font-size-10: 0.64rem;
+  --cd-font-size-20: 0.8rem;
   --cd-font-size-30: 1rem;
-  --cd-font-size-40: 1.2rem;
-  --cd-font-size-50: 1.44rem;
-  --cd-font-size-60: 1.728rem;
-  --cd-font-size-70: 2.074rem;
-  --cd-font-size-80: 2.488rem;
-  --cd-font-size-90: 2.986rem;
+  --cd-font-size-40: 1.25rem;
+  --cd-font-size-50: 1.563rem;
+  --cd-font-size-60: 1.953rem;
+  --cd-font-size-70: 2.441rem;
+  --cd-font-size-80: 3.052rem;
+  --cd-font-size-90: 3.815rem;
 
   /* FONT WEIGHT SCALE */
   --cd-font-weight-100: 100;
@@ -450,9 +450,9 @@
   --cd-button-gap-lg: var(--cd-spacing-300);
 
   /* BUTTON FONT SIZE */
-  --cd-button-font-size-sm: var(--cd-font-size-20);
-  --cd-button-font-size-md: var(--cd-font-size-30);
-  --cd-button-font-size-lg: var(--cd-font-size-40);
+  --cd-button-font-size-sm: var(--cd-font-size-40);
+  --cd-button-font-size-md: var(--cd-font-size-50);
+  --cd-button-font-size-lg: var(--cd-font-size-60);
 
   /* BUTTON LINE HEIGHTS */
   --cd-button-line-height-sm: var(--cd-line-height-sm);
@@ -466,7 +466,7 @@
   --cd-button-font-weight-lg: var(--cd-font-weight-400);
 
   /* BUTTON FONT FAMILY */
-  --cd-button-font-family: var(--cd-font-family-sans-serif);
+  --cd-button-font-family: var(--cd-font-family-title);
 
   /* BUTTON TEXT TRANSFORM */
   --cd-button-font-transform: uppercase;
@@ -829,12 +829,12 @@
   --cd-heading-margin-combined-h6-desktop: var(--cd-heading-margin-top-h6-desktop) var(--cd-heading-margin-right-h6-desktop) var(--cd-heading-margin-bottom-h6-desktop) var(--cd-heading-margin-left-h6-desktop);
 
   /* FONT FAMILY */
-  --cd-heading-font-family-h1: var(--cd-font-family-sans-serif);
-  --cd-heading-font-family-h2: var(--cd-font-family-sans-serif);
-  --cd-heading-font-family-h3: var(--cd-font-family-sans-serif);
-  --cd-heading-font-family-h4: var(--cd-font-family-sans-serif);
-  --cd-heading-font-family-h5: var(--cd-font-family-sans-serif);
-  --cd-heading-font-family-h6: var(--cd-font-family-sans-serif);
+  --cd-heading-font-family-h1: var(--cd-font-family-title);
+  --cd-heading-font-family-h2: var(--cd-font-family-title);
+  --cd-heading-font-family-h3: var(--cd-font-family-title);
+  --cd-heading-font-family-h4: var(--cd-font-family-title);
+  --cd-heading-font-family-h5: var(--cd-font-family-title);
+  --cd-heading-font-family-h6: var(--cd-font-family-title);
 
   /* FONT WEIGHT */
   --cd-heading-font-weight-h1: var(--cd-font-weight-400);
@@ -851,6 +851,14 @@
   --cd-heading-line-height-h4: var(--cd-line-height-md);
   --cd-heading-line-height-h5: var(--cd-line-height-md);
   --cd-heading-line-height-h6: var(--cd-line-height-md);
+
+  /* TEXT TRANSFORM */
+  --cd-heading-font-transform-h1: uppercase;
+  --cd-heading-font-transform-h2: uppercase;
+  --cd-heading-font-transform-h3: uppercase;
+  --cd-heading-font-transform-h4: uppercase;
+  --cd-heading-font-transform-h5: uppercase;
+  --cd-heading-font-transform-h6: uppercase;
 
   /* ICON */
   /* COLOR */

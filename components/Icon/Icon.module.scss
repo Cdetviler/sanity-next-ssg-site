@@ -46,3 +46,8 @@
     width: var(--cd-icon-size-xl);
     height: var(--cd-icon-size-xl);
 }
+
+.sizeNone {
+    width: unset;
+    height: unset;
+}

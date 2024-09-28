@@ -63,7 +63,6 @@ export default function Stack({
                 xl: gap,
             }
             return Object.entries(convertedValue).map((size) => {
-                console.log(size);
                 return styles[`${size}-media-gap-${gap}`];
             })
         }

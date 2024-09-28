@@ -1,6 +1,7 @@
 import React from "react";
 import { HeadingProps } from "./Heading.type";
 import styles from "./Heading.module.scss";
+import { getStyle } from "@/utilities/styles";
 
 const VALID_HEADINGS = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'];
 const VALID_VARIANTS = ['primary', 'secondary', 'tertiary', 'neutral-dark', 'neutral-light'];
@@ -15,24 +16,12 @@ export default function Heading({
     textAlign = 'left'
 }: HeadingProps
 ) {
-    let headingLevelStyles = '';
-    if (VALID_HEADINGS.includes(tag)) {
-        headingLevelStyles = styles[tag];
-    }
-
-    let variantStyles = '';
-    if (VALID_VARIANTS.includes(color)) {
-        variantStyles = styles[color];
-    }
-
+    const headingLevelStyles = getStyle(VALID_HEADINGS, styles, tag);
+    const variantStyles = getStyle(VALID_VARIANTS, styles, color);
+    const alignmentStyles = getStyle(VALID_ALIGNMENTS, styles, textAlign);
     let spacingStyles = '';
     if (!spacing) {
         spacingStyles = styles.noSpacing;
-    }
-
-    let alignmentStyles = '';
-    if (VALID_ALIGNMENTS.includes(textAlign)) {
-        alignmentStyles = styles[textAlign];
     }
 
     const finalClassName = `${styles.heading} ${headingLevelStyles} ${alignmentStyles} ${variantStyles} ${spacingStyles} ${className}`;

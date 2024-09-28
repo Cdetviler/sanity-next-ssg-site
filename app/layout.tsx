@@ -1,8 +1,39 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const agency = localFont({
+  src: '../fonts/agency/agency.ttf',
+  variable: '--font-agency',
+  display: 'swap'
+});
+
+const alegreyaSans = localFont({
+  src: [
+    {
+      path: '../fonts/alegreya/alegreyasans-regular.ttf',
+      weight: '400',
+      style: 'normal'
+    },
+    {
+      path: '../fonts/alegreya/alegreyasans-italic.ttf',
+      weight: '400',
+      style: 'italic'
+    },
+    {
+      path: '../fonts/alegreya/alegreyasans-bold.ttf',
+      weight: '700',
+      style: 'normal'
+    },
+    {
+      path: '../fonts/alegreya/alegreyasans-bolditalic.ttf',
+      weight: '700',
+      style: 'italic'
+    }
+  ],
+  variable: '--font-alegreya',
+  display: 'swap'
+})
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -14,9 +45,10 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const finalClassName = `${agency.variable} ${alegreyaSans.variable}`;
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" className={finalClassName}>
+      <body >{children}</body>
     </html>
   );
 }
