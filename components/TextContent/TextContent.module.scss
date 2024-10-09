@@ -1,0 +1,113 @@
+@import "/styles/mixins";
+
+.textContent {
+    margin: 0;
+    padding: 0;
+    font-family: var(--cd-textcontent-font-family);
+}
+
+.primary {
+    color: var(--cd-textcontent-text-color-primary);
+}
+
+.secondary {
+    color: var(--cd-textcontent-text-color-secondary);
+}
+
+.tertiary {
+    color: var(--cd-textcontent-text-color-tertiary);
+}
+
+.neutral-light {
+    color: var(--cd-textcontent-text-color-neutral-light);
+}
+
+.neutral-dark {
+    color: var(--cd-textcontent-text-color-neutral-dark);
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+.center {
+    text-align: center;
+}
+
+.xs {
+    font-size: var(--cd-textcontent-font-size-xs-mobile);
+    line-height: var(--cd-textcontent-line-height-xs);
+
+    @include device-size(tablet) {
+        font-size: var(--cd-textcontent-font-size-xs-tablet);
+    }
+
+    @include device-size(desktop) {
+        font-size: var(--cd-textcontent-font-size-xs-desktop);
+
+    }
+}
+
+.sm {
+    font-size: var(--cd-textcontent-font-size-sm-mobile);
+    line-height: var(--cd-textcontent-line-height-sm);
+
+    @include device-size(tablet) {
+        font-size: var(--cd-textcontent-font-size-sm-tablet);
+
+    }
+
+    @include device-size(desktop) {
+        font-size: var(--cd-textcontent-font-size-sm-desktop);
+
+    }
+}
+
+.md {
+    font-size: var(--cd-textcontent-font-size-md-mobile);
+    line-height: var(--cd-textcontent-line-height-md);
+
+    @include device-size(tablet) {
+        font-size: var(--cd-textcontent-font-size-md-tablet);
+
+    }
+
+    @include device-size(desktop) {
+        font-size: var(--cd-textcontent-font-size-md-desktop);
+
+    }
+}
+
+.lg {
+    font-size: var(--cd-textcontent-font-size-lg-mobile);
+    line-height: var(--cd-textcontent-line-height-lg);
+
+    @include device-size(tablet) {
+        font-size: var(--cd-textcontent-font-size-lg-tablet);
+
+    }
+
+    @include device-size(desktop) {
+        font-size: var(--cd-textcontent-font-size-lg-desktop);
+
+    }
+}
+
+.xl {
+    font-size: var(--cd-textcontent-font-size-xl-mobile);
+    line-height: var(--cd-textcontent-line-height-xl);
+
+    @include device-size(tablet) {
+        font-size: var(--cd-textcontent-font-size-xl-tablet);
+
+    }
+
+    @include device-size(desktop) {
+        font-size: var(--cd-textcontent-font-size-xl-desktop);
+
+    }
+}

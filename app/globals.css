@@ -55,7 +55,14 @@
   --cd-spacing-800: 4rem;
   --cd-spacing-900: 8rem;
 
+  --cd-text-spacing-xs: -3px;
+  --cd-text-spacing-sm: -2px;
+  --cd-text-spacing-md: 0px;
+  --cd-text-spacing-lg: 2px;
+  --cd-text-spacing-xl: 3px;
+
   /* FONT SIZE SCALE */
+  --cd-font-size-base: 18px;
   --cd-font-size-10: 0.64rem;
   --cd-font-size-20: 0.8rem;
   --cd-font-size-30: 1rem;
@@ -398,7 +405,7 @@
   /* BUTTON SIZING */
   /* BUTTON BORDER SIZE */
   --cd-button-border-size-sm: var(--cd-border-width-1);
-  --cd-button-border-size-md: var(--cd-border-width-1);
+  --cd-button-border-size-md: var(--cd-border-width-2);
   --cd-button-border-size-lg: var(--cd-border-width-2);
 
   /* BUTTON BORDER RADIUS */
@@ -450,14 +457,26 @@
   --cd-button-gap-lg: var(--cd-spacing-300);
 
   /* BUTTON FONT SIZE */
-  --cd-button-font-size-sm: var(--cd-font-size-40);
-  --cd-button-font-size-md: var(--cd-font-size-50);
-  --cd-button-font-size-lg: var(--cd-font-size-60);
+  --cd-button-font-size-sm-desktop: var(--cd-font-size-40);
+  --cd-button-font-size-sm-tablet: var(--cd-font-size-40);
+  --cd-button-font-size-sm-mobile: var(--cd-font-size-40);
+
+  --cd-button-font-size-md-desktop: var(--cd-font-size-50);
+  --cd-button-font-size-md-tablet: var(--cd-font-size-40);
+  --cd-button-font-size-md-mobile: var(--cd-font-size-40);
+
+  --cd-button-font-size-lg-desktop: var(--cd-font-size-60);
+  --cd-button-font-size-lg-tablet: var(--cd-font-size-50);
+  --cd-button-font-size-lg-mobile: var(--cd-font-size-40);
 
   /* BUTTON LINE HEIGHTS */
-  --cd-button-line-height-sm: var(--cd-line-height-sm);
-  --cd-button-line-height-md: var(--cd-line-height-md);
-  --cd-button-line-height-lg: var(--cd-line-height-lg);
+  --cd-button-line-height-sm: var(--cd-font-line-height-sm);
+  --cd-button-line-height-md: var(--cd-font-line-height-md);
+  --cd-button-line-height-lg: var(--cd-font-line-height-lg);
+
+  --cd-button-text-spacing-sm: var(--cd-text-spacing-md);
+  --cd-button-text-spacing-md: var(--cd-text-spacing-lg);
+  --cd-button-text-spacing-lg: var(--cd-text-spacing-xl);
 
   /* BUTTON FONT WEIGHT */
   /* TODO: Investigate when font chosen*/
@@ -680,6 +699,48 @@
   --cd-box-width-full: 100%;
   --cd-box-width-auto: auto;
 
+  /* TEXT CONTENT SIZES */
+  /* TEXT CONTENT COLOR STYLES */
+  --cd-textcontent-text-color-primary: var(--cd-color-text-primary-default);
+  --cd-textcontent-text-color-secondary: var(--cd-color-text-secondary-default);
+  --cd-textcontent-text-color-tertiary: var(--cd-color-text-tertiary-default);
+  --cd-textcontent-text-color-neutral-light: var(--cd-color-text-neutral-inverse-default);
+  --cd-textcontent-text-color-neutral-dark: var(--cd-color-text-neutral-default);
+
+  /* TEXT CONTENT FONT SIZES */
+  --cd-textcontent-font-size-xs-desktop: var(--cd-font-size-10);
+  --cd-textcontent-font-size-xs-tablet: var(--cd-font-size-10);
+  --cd-textcontent-font-size-xs-mobile: var(--cd-font-size-10);
+
+  --cd-textcontent-font-size-sm-desktop: var(--cd-font-size-20);
+  --cd-textcontent-font-size-sm-tablet: var(--cd-font-size-20);
+  --cd-textcontent-font-size-sm-mobile: var(--cd-font-size-20);
+
+  --cd-textcontent-font-size-md-desktop: var(--cd-font-size-30);
+  --cd-textcontent-font-size-md-tablet: var(--cd-font-size-30);
+  --cd-textcontent-font-size-md-mobile: var(--cd-font-size-30);
+
+  --cd-textcontent-font-size-lg-desktop: var(--cd-font-size-40);
+  --cd-textcontent-font-size-lg-tablet: var(--cd-font-size-40);
+  --cd-textcontent-font-size-lg-mobile: var(--cd-font-size-40);
+
+  --cd-textcontent-font-size-xl-desktop: var(--cd-font-size-40);
+  --cd-textcontent-font-size-xl-tablet: var(--cd-font-size-40);
+  --cd-textcontent-font-size-xl-mobile: var(--cd-font-size-40);
+
+  /* FONT FAMILY */
+  --cd-textcontent-font-family: var(--cd-font-family-body);
+
+  /* FONT WEIGHT */
+  --cd-textcontent-font-weight: var(--cd-font-weight-400);
+
+  /* LINE HEIGHT */
+  --cd-textcontent-line-height-xs: var(--cd-font-line-height-md);
+  --cd-textcontent-line-height-sm: var(--cd-font-line-height-md);
+  --cd-textcontent-line-height-md: var(--cd-font-line-height-lg);
+  --cd-textcontent-line-height-lg: var(--cd-font-line-height-lg);
+  --cd-textcontent-line-height-xl: var(--cd-font-line-height-lg);
+
   /* HEADING STYLES */
   /* HEADING COLOR STYLES */
   --cd-heading-text-color-primary: var(--cd-color-text-primary-default);
@@ -712,6 +773,14 @@
   --cd-heading-font-size-h6-desktop: var(--cd-font-size-40);
   --cd-heading-font-size-h6-tablet: var(--cd-font-size-40);
   --cd-heading-font-size-h6-mobile: var(--cd-font-size-40); 
+
+  /* HEADING TEXT SPACING */
+  --cd-heading-text-spacing-h1: var(--cd-text-spacing-xl);
+  --cd-heading-text-spacing-h2: var(--cd-text-spacing-lg);
+  --cd-heading-text-spacing-h3: var(--cd-text-spacing-lg);
+  --cd-heading-text-spacing-h4: var(--cd-text-spacing-md);
+  --cd-heading-text-spacing-h5: var(--cd-text-spacing-md);
+  --cd-heading-text-spacing-h6: var(--cd-text-spacing-md);
 
   /* HEADING SPACING */
   /* H1 */
@@ -845,12 +914,12 @@
   --cd-heading-font-weight-h6: var(--cd-font-weight-400);
 
   /* LINE HEIGHT */
-  --cd-heading-line-height-h1: var(--cd-line-height-lg);
-  --cd-heading-line-height-h2: var(--cd-line-height-lg);
-  --cd-heading-line-height-h3: var(--cd-line-height-md);
-  --cd-heading-line-height-h4: var(--cd-line-height-md);
-  --cd-heading-line-height-h5: var(--cd-line-height-md);
-  --cd-heading-line-height-h6: var(--cd-line-height-md);
+  --cd-heading-line-height-h1: var(--cd-font-line-height-lg);
+  --cd-heading-line-height-h2: var(--cd-font-line-height-lg);
+  --cd-heading-line-height-h3: var(--cd-font-line-height-md);
+  --cd-heading-line-height-h4: var(--cd-font-line-height-md);
+  --cd-heading-line-height-h5: var(--cd-font-line-height-md);
+  --cd-heading-line-height-h6: var(--cd-font-line-height-md);
 
   /* TEXT TRANSFORM */
   --cd-heading-font-transform-h1: uppercase;
@@ -875,6 +944,8 @@
   --cd-icon-size-lg: var(--cd-font-size-40);
   --cd-icon-size-xl: var(--cd-font-size-50);
 
+  /* END VARIABLES */
+  font-size: var(--cd-font-size-base);
 }
 
 body {

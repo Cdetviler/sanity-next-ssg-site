@@ -1,3 +1,5 @@
+@import "/styles/mixins";
+
 .button {
     appearance: none;
     background: none;
@@ -17,12 +19,32 @@
     border-width: var(--cd-button-border-size-sm);
     border-radius: var(--cd-button-border-radius-sm);
     gap: var(--cd-button-gap-sm);
-    font-size: var(--cd-button-font-size-sm);
+    font-size: var(--cd-button-font-size-sm-mobile);
+    letter-spacing: var(--cd-button-text-spacing-sm);
+
+    @include device-size(tablet) {
+        font-size: var(--cd-button-font-size-sm-tablet);
+    }
+
+    @include device-size(desktop) {
+        font-size: var(--cd-button-font-size-sm-desktop);
+    }
 }
 
 .small svg {
-    height: var(--cd-button-font-size-sm);
-    width: var(--cd-button-font-size-sm);
+    height: var(--cd-button-font-size-sm-mobile);
+    width: var(--cd-button-font-size-sm-mobile);
+    flex-shrink: 0;
+
+    @include device-size(tablet) {
+        height: var(--cd-button-font-size-sm-tablet);
+        width: var(--cd-button-font-size-sm-tablet);
+    }
+
+    @include device-size(desktop) {
+        height: var(--cd-button-font-size-sm-desktop);
+        width: var(--cd-button-font-size-sm-desktop);
+    }
 }
 
 .medium {
@@ -31,12 +53,32 @@
     border-width: var(--cd-button-border-size-md);
     border-radius: var(--cd-button-border-radius-md); 
     gap: var(--cd-button-gap-md);
-    font-size: var(--cd-button-font-size-md);
+    font-size: var(--cd-button-font-size-md-mobile);
+    letter-spacing: var(--cd-button-text-spacing-md);
+
+    @include device-size(tablet) {
+        font-size: var(--cd-button-font-size-md-tablet);
+    }
+
+    @include device-size(desktop) {
+        font-size: var(--cd-button-font-size-md-desktop);
+    }
 }
 
 .medium svg {
-    height: var(--cd-button-font-size-md);
-    width: var(--cd-button-font-size-md);
+    height: var(--cd-button-font-size-md-mobile);
+    width: var(--cd-button-font-size-md-mobile);
+    flex-shrink: 0;
+
+    @include device-size(tablet) {
+        height: var(--cd-button-font-size-md-tablet);
+        width: var(--cd-button-font-size-md-tablet);
+    }
+
+    @include device-size(desktop) {
+        height: var(--cd-button-font-size-md-desktop);
+        width: var(--cd-button-font-size-md-desktop);
+    }
 }
 
 .large {
@@ -45,12 +87,32 @@
     border-width: var(--cd-button-border-size-lg);
     border-radius: var(--cd-button-border-radius-lg);
     gap: var(--cd-button-gap-lg);
-    font-size: var(--cd-button-font-size-lg);
+    font-size: var(--cd-button-font-size-lg-mobile);
+    letter-spacing: var(--cd-button-text-spacing-lg);
+
+    @include device-size(tablet) {
+        font-size: var(--cd-button-font-size-lg-tablet);
+    }
+
+    @include device-size(desktop) {
+        font-size: var(--cd-button-font-size-lg-desktop);
+    }
 }
 
 .large svg {
-    height: var(--cd-button-font-size-lg);
-    width: var(--cd-button-font-size-lg);
+    height: var(--cd-button-font-size-lg-mobile);
+    width: var(--cd-button-font-size-lg-mobile );
+    flex-shrink: 0;
+
+    @include device-size(tablet) {
+        height: var(--cd-button-font-size-lg-tablet);
+        width: var(--cd-button-font-size-lg-tablet);
+    }
+
+    @include device-size(desktop) {
+        height: var(--cd-button-font-size-lg-desktop);
+        width: var(--cd-button-font-size-lg-desktop);
+    }
 }
 
 /* PRIMARY */

@@ -1,5 +1,5 @@
 import { ButtonProps, buttonColor, buttonHierarchy, buttonSize } from "./Button.type"
-import styles from './Button.module.css';
+import styles from './Button.module.scss';
 
 const BUTTON_VARIANTS = {
     primary: {
