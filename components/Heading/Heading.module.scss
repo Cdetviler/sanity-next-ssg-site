@@ -44,6 +44,7 @@
     line-height: var(--cd-heading-line-height-h1);
     margin: var(--cd-heading-margin-combined-h1-mobile);
     text-transform: var(--cd-heading-font-transform-h1);
+    letter-spacing: var(--cd-heading-text-spacing-h1);
 
     @include device-size(tablet) {
         font-size: var(--cd-heading-font-size-h1-tablet);
@@ -65,6 +66,7 @@
     line-height: var(--cd-heading-line-height-h2);
     margin: var(--cd-heading-margin-combined-h2-mobile);
     text-transform: var(--cd-heading-font-transform-h2);
+    letter-spacing: var(--cd-heading-text-spacing-h2);
 
     @include device-size(tablet) {
         font-size: var(--cd-heading-font-size-h2-tablet);
@@ -84,6 +86,7 @@
     line-height: var(--cd-heading-line-height-h3);
     margin: var(--cd-heading-margin-combined-h3-mobile);
     text-transform: var(--cd-heading-font-transform-h3);
+    letter-spacing: var(--cd-heading-text-spacing-h3);
 
     @include device-size(tablet) {
         font-size: var(--cd-heading-font-size-h3-tablet);
@@ -103,6 +106,7 @@
     line-height: var(--cd-heading-line-height-h4);
     margin: var(--cd-heading-margin-combined-h4-mobile);
     text-transform: var(--cd-heading-font-transform-h4);
+    letter-spacing: var(--cd-heading-text-spacing-h4);
 
     @include device-size(tablet) {
         font-size: var(--cd-heading-font-size-h4-tablet);
@@ -122,6 +126,7 @@
     line-height: var(--cd-heading-line-height-h5);
     margin: var(--cd-heading-margin-combined-h5-mobile);
     text-transform: var(--cd-heading-font-transform-h5);
+    letter-spacing: var(--cd-heading-text-spacing-h5);
 
     @include device-size(tablet) {
         font-size: var(--cd-heading-font-size-h5-tablet);
@@ -141,6 +146,7 @@
     line-height: var(--cd-heading-line-height-h6);
     margin: var(--cd-heading-margin-combined-h6-mobile);
     text-transform: var(--cd-heading-font-transform-h6);
+    letter-spacing: var(--cd-heading-text-spacing-h6);
 
     @include device-size(tablet) {
         font-size: var(--cd-heading-font-size-h6-tablet);
