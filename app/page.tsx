@@ -7,6 +7,7 @@ import Heading from "@/components/Heading/Heading";
 import BackgroundImage from "@/components/BackgroundImage/BackgroundImage";
 import Icon from "@/components/Icon/Icon";
 import TextContent from "@/components/TextContent/TextContent";
+import ButtonLink from "@/components/Button/ButtonLink";
 
 export default function Home() {
   return (
@@ -33,7 +34,7 @@ export default function Home() {
             <Stack direction="column">
               <Box height="auto" padding="sm">
                 <Stack direction="column" crossDirectionalAlign="flex-start">
-                  <Button color="secondary"> Secondary <Icon size="md" type="ArrowBigRightDash"/></Button>
+                  <ButtonLink href="/components" color="secondary"> Secondary <Icon size="md" type="ArrowBigRightDash"/></ButtonLink>
                   <Button color="secondary" hierarchy="outlined"> secondary Outlined <Icon size="md" type="ArrowBigRightDash"/></Button>
                   <Button color="secondary" hierarchy="ghost"> secondary ghost <Icon size="md" type="ArrowBigRightDash"/></Button>
                 </Stack>
