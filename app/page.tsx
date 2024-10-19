@@ -8,6 +8,7 @@ import BackgroundImage from "@/components/BackgroundImage/BackgroundImage";
 import Icon from "@/components/Icon/Icon";
 import TextContent from "@/components/TextContent/TextContent";
 import ButtonLink from "@/components/Button/ButtonLink";
+import Link from "@/components/Link/Link";
 
 export default function Home() {
   return (
@@ -125,17 +126,31 @@ export default function Home() {
         </Box>
 
         <Box hierarchy="ghost" padding="sm">
-          <Stack crossDirectionalAlign="flex-start">
-            <Box color="primary" padding="sm" height="auto">
-              <TextContent color="secondary" size="md">
-                is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-              </TextContent>
-            </Box>
-            <Box hierarchy="ghost" padding="sm" height="auto">
-              <TextContent color="primary" size="md">
-                is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-              </TextContent>
-            </Box>
+          <Stack direction="column" crossDirectionalAlign="flex-start">
+            <Stack crossDirectionalAlign="flex-start">
+              <Box color="primary" padding="sm" height="auto">
+                <TextContent color="secondary" size="md">
+                  is simply dummy text of the printing and typesetting industry. <Link variant="light" href="/components"> Go to Components page </Link> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </TextContent>
+              </Box>
+              <Box hierarchy="ghost" padding="sm" height="auto">
+                <TextContent color="primary" size="md">
+                  is simply dummy text of the printing and typesetting industry. <Link href="/components"> Go to Components page </Link> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </TextContent>
+              </Box>
+            </Stack>
+            <Stack crossDirectionalAlign="flex-start">
+              <Box color="tertiary" padding="sm" height="auto">
+                <TextContent color="secondary" size="md">
+                  is simply dummy text of the printing and typesetting industry. <Link variant="light" href="/components"> Go to Components page </Link> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </TextContent>
+              </Box>
+              <Box color="secondary" padding="sm" height="auto">
+                <TextContent color="primary" size="md">
+                  is simply dummy text of the printing and typesetting industry. <Link href="/components"> Go to Components page </Link> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </TextContent>
+              </Box>
+            </Stack>
           </Stack>
         </Box>
       </Box>

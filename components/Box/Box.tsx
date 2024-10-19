@@ -1,5 +1,5 @@
 import { boxColor, boxHierarchy, BoxProps } from "./Box.type";
-import styles from './Box.module.css';
+import styles from './Box.module.scss';
 
 const BOX_VARIANTS = {
     primary: {
