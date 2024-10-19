@@ -49,13 +49,11 @@
     @include device-size(tablet) {
         font-size: var(--cd-heading-font-size-h1-tablet);
         margin: var(--cd-heading-margin-combined-h1-tablet);
-
     }
 
     @include device-size(desktop) {
         font-size: var(--cd-heading-font-size-h1-desktop);
         margin: var(--cd-heading-margin-combined-h1-desktop);
-
     }
 }
 
