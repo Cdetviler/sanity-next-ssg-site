@@ -1,0 +1,46 @@
+.link {
+    font-size: inherit;
+    font-family: var(--cd-link-font-family);
+    font-size: var(--cd-link-font-size);
+    text-underline-offset: var(--cd-link-text-decoration-offset-default);
+}
+
+.dark {
+    color: var(--cd-link-text-color-dark-default);
+    text-decoration: var(--cd-link-text-decoration-type-default) var(--cd-link-text-decoration-style-default) var(--cd-link-text-decoration-thickness-default) var(--cd-link-text-decoration-color-dark-default);
+
+    &:active {
+        color: var(--cd-link-text-color-dark-active);
+        text-decoration: var(--cd-link-text-decoration-type-active) var(--cd-link-text-decoration-style-active) var(--cd-link-text-decoration-thickness-active) var(--cd-link-text-decoration-color-dark-active);
+    }
+
+    &:visited {
+        color: var(--cd-link-text-color-dark-visited);
+        text-decoration: var(--cd-link-text-decoration-type-visited) var(--cd-link-text-decoration-style-visited) var(--cd-link-text-decoration-thickness-visited) var(--cd-link-text-decoration-color-dark-visited);
+    }
+
+    &:hover {
+        color: var(--cd-link-text-color-dark-hover);
+        text-decoration: var(--cd-link-text-decoration-type-hover) var(--cd-link-text-decoration-style-hover) var(--cd-link-text-decoration-thickness-hover) var(--cd-link-text-decoration-color-dark-hover);
+    }
+}
+
+.light {
+    color: var(--cd-link-text-color-light-default);
+    text-decoration: var(--cd-link-text-decoration-type-default) var(--cd-link-text-decoration-style-default) var(--cd-link-text-decoration-thickness-default) var(--cd-link-text-decoration-color-light-default);
+
+    &:active {
+        color: var(--cd-link-text-color-light-active);
+        text-decoration: var(--cd-link-text-decoration-type-active) var(--cd-link-text-decoration-style-active) var(--cd-link-text-decoration-thickness-active) var(--cd-link-text-decoration-color-light-active);
+    }
+
+    &:visited {
+        color: var(--cd-link-text-color-light-visited);
+        text-decoration: var(--cd-link-text-decoration-type-visited) var(--cd-link-text-decoration-style-visited) var(--cd-link-text-decoration-thickness-visited) var(--cd-link-text-decoration-color-light-visited);
+    }
+
+    &:hover {
+        color: var(--cd-link-text-color-light-hover);
+        text-decoration: var(--cd-link-text-decoration-type-hover) var(--cd-link-text-decoration-style-hover) var(--cd-link-text-decoration-thickness-hover) var(--cd-link-text-decoration-color-light-hover);
+    }
+}

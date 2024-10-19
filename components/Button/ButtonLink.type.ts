@@ -1,6 +1,6 @@
-import { MouseEventHandler, ReactNode } from "react"
+import { ReactNode } from "react"
 import { UrlObject } from "url";
-import type { LinkProps as NextLinkProps } from 'next/link';  // Import Next.js LinkProps
+import type { LinkProps as NextLinkProps } from 'next/link';
 
 type buttonLinkColor = 'primary' | 'secondary' | 'tertiary';
 type buttonLinkSize = 'sm' | 'md' | 'lg';

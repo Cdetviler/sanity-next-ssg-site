@@ -191,6 +191,17 @@
   --cd-color-aqua-800: #246d74;
   --cd-color-aqua-900: #1e4b4c;
 
+  --cd-color-mustard-50: #f3f2e3;
+  --cd-color-mustard-100: #e1ddba;
+  --cd-color-mustard-200: #ccc88f; /* main */
+  --cd-color-mustard-300: #b8b363;
+  --cd-color-mustard-400: #aba640;
+  --cd-color-mustard-500: #9e9a19;
+  --cd-color-mustard-600: #928b17;
+  --cd-color-mustard-700: #817813;
+  --cd-color-mustard-800: #6f640e;
+  --cd-color-mustard-900: #514205;
+
 /* ALIASES */
   /* INTERMEDIARY COLOR ALIASES */
   /* A color that is on the darker side of its generated color palette */
@@ -211,6 +222,12 @@
   --cd-color-tertiary-default: var(--cd-color-hotpink-900);
   --cd-color-tertiary-lighter: var(--cd-color-hotpink-700);
   --cd-color-tertiary-lightest: var(--cd-color-hotpink-600);
+
+  --cd-color-quaternary-darkest: var(--cd-color-mustard-500);
+  --cd-color-quaternary-darker: var(--cd-color-mustard-400);
+  --cd-color-quaternary-default: var(--cd-color-mustard-200);
+  --cd-color-quaternary-lighter: var(--cd-color-mustard-50);
+  --cd-color-quaternary-lightest: var(--cd-color-mustard-50);
 
   /* SURFACE COLOR */
   --cd-color-surface-primary-default: var(--cd-color-primary-default);
@@ -255,6 +272,22 @@
   --cd-color-text-neutral-inverse-default: var(--cd-color-neutral-0);
 
   --cd-color-text-disabled: var(--cd-color-neutral-300);
+
+  /* SELECTION COLOR */
+  /* TODO */
+  --cd-color-text-selection-primary: ;
+  --cd-color-text-selection-secondary: ;
+  --cd-color-text-selection-tertiary: ;
+  --cd-color-text-selection-quaternary: ;
+  --cd-color-text-selection-neutral-light: ;
+  --cd-color-text-selection-neutral-dark: ;
+
+  --cd-color-surface-selection-primary: ;
+  --cd-color-surface-selection-secondary: ;
+  --cd-color-surface-selection-tertiary: ;
+  --cd-color-surface-selection-quaternary: ;
+  --cd-color-surface-selection-neutral-light: ;
+  --cd-color-surface-selection-neutral-dark: ;
 
   /* BORDER COLOR */
   --cd-color-border-primary-default: var(--cd-color-primary-default);
@@ -943,6 +976,51 @@
   --cd-icon-size-md: var(--cd-font-size-30);
   --cd-icon-size-lg: var(--cd-font-size-40);
   --cd-icon-size-xl: var(--cd-font-size-50);
+
+  /* LINK */
+  --cd-link-text-color-dark-default: var(--cd-color-tertiary-darker);
+  --cd-link-text-color-dark-hover: var(--cd-color-tertiary-darker);
+  --cd-link-text-color-dark-active: var(--cd-color-tertiary-darker);
+  --cd-link-text-color-dark-visited: var(--cd-color-tertiary-darkest);
+
+  --cd-link-text-color-light-default: var(--cd-color-quaternary-darker);
+  --cd-link-text-color-light-hover: var(--cd-color-quaternary-default);
+  --cd-link-text-color-light-active: var(--cd-color-quaternary-darker);
+  --cd-link-text-color-light-visited: var(--cd-color-quaternary-darker);
+
+  --cd-link-font-family: inherit;
+  --cd-link-font-size: inherit;
+
+  /* LINK DECORATION STYLES */
+  --cd-link-text-decoration-type-default: underline;
+  --cd-link-text-decoration-type-hover: underline;
+  --cd-link-text-decoration-type-active: underline;
+  --cd-link-text-decoration-type-visited: underline;
+
+  --cd-link-text-decoration-style-default: solid;
+  --cd-link-text-decoration-style-hover: solid;
+  --cd-link-text-decoration-style-active: solid;
+  --cd-link-text-decoration-style-visited: solid;
+
+  --cd-link-text-decoration-offset-default: var(--cd-spacing-100);
+  --cd-link-text-decoration-offset-hover: var(--cd-spacing-100);
+  --cd-link-text-decoration-offset-active: var(--cd-spacing-100);
+  --cd-link-text-decoration-offset-visited: var(--cd-spacing-100);
+
+  --cd-link-text-decoration-thickness-default: var(--cd-border-width-1);
+  --cd-link-text-decoration-thickness-hover: var(--cd-border-width-2);
+  --cd-link-text-decoration-thickness-active: var(--cd-border-width-1);
+  --cd-link-text-decoration-thickness-visited: var(--cd-border-width-1);
+
+  --cd-link-text-decoration-color-dark-default: var(--cd-color-tertiary-darker);
+  --cd-link-text-decoration-color-dark-hover: var(--cd-color-tertiary-darker);
+  --cd-link-text-decoration-color-dark-active: var(--cd-color-tertiary-darker);
+  --cd-link-text-decoration-color-dark-visited: var(--cd-color-tertiary-darker);
+
+  --cd-link-text-decoration-color-light-default: var(--cd-color-quaternary-darker);
+  --cd-link-text-decoration-color-light-hover: var(--cd-color-quaternary-default);
+  --cd-link-text-decoration-color-light-active: var(--cd-color-quaternary-darker);
+  --cd-link-text-decoration-color-light-visited: var(--cd-color-quaternary-darker);
 
   /* END VARIABLES */
   font-size: var(--cd-font-size-base);
