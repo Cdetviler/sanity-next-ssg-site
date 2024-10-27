@@ -6,6 +6,7 @@ import Box from "@/components/Box/Box";
 import Heading from "@/components/Heading/Heading";
 import BackgroundImage from "@/components/BackgroundImage/BackgroundImage";
 import Icon from "@/components/Icon/Icon";
+import List from "@/components/List/List";
 
 export default function Home() {
   return (
@@ -25,8 +26,7 @@ export default function Home() {
           </Box>
         </BackgroundImage>
       </Box>
-      <Box color="neutral" hierarchy="ghost" padding="md">
-        
+      <Box color="neutral" hierarchy="ghost" padding="md">   
         <Box hierarchy="ghost" padding="sm">
           <Stack crossDirectionalAlign="flex-start">
             <Stack direction="column">
@@ -121,6 +121,20 @@ export default function Home() {
             </Box>
           </Stack>
         </Box>
+      </Box>
+      <Box color="neutral" hierarchy="ghost" padding="md">
+        <Stack crossDirectionalAlign="flex-start">
+          <List>
+            <li>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make</li>
+            <li>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </li>
+            <li>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary,</li>
+          </List>
+          <List listType="ol">
+            <li>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make</li>
+            <li>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </li>
+            <li>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary,</li>
+          </List>
+        </Stack>
       </Box>
     </main>
   );

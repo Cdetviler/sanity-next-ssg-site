@@ -23,7 +23,7 @@ export default function Link({
 
     if (external) {
         return (
-            <a  {...linkProps} href={typeof href === 'string' ? href : undefined} className={finalClassName}>
+            <a {...linkProps} href={typeof href === 'string' ? href : undefined} className={finalClassName}>
                 {children}
             </a>
         )
