@@ -1022,6 +1022,35 @@
   --cd-link-text-decoration-color-light-active: var(--cd-color-quaternary-darker);
   --cd-link-text-decoration-color-light-visited: var(--cd-color-quaternary-darker);
 
+  /* LIST STYLES */
+  --cd-list-bullet-style-unordered: disc;
+  --cd-list-bullet-style-ordered: decimal;
+
+  --cd-list-margin-top: var(--cd-spacing-0);
+  --cd-list-margin-right: var(--cd-spacing-0);
+  --cd-list-margin-bottom: var(--cd-spacing-0);
+  --cd-list-margin-left: var(--cd-spacing-400);
+  --cd-list-margin-combined: var(--cd-list-margin-top) var(--cd-list-margin-right) var(--cd-list-margin-bottom) var(--cd-list-margin-left);
+
+  --cd-list-padding-top: var(--cd-spacing-0);
+  --cd-list-padding-right: var(--cd-spacing-0);
+  --cd-list-padding-bottom: var(--cd-spacing-0);
+  --cd-list-padding-left: var(--cd-spacing-0);
+  --cd-list-padding-combined: var(--cd-list-padding-top) var(--cd-list-padding-right) var(--cd-list-padding-bottom) var(--cd-list-padding-left);
+
+  --cd-list-text-color-primary: var(--cd-color-text-primary-default);
+  --cd-list-text-color-secondary: var(--cd-color-text-secondary-default);
+  --cd-list-text-color-tertiary: var(--cd-color-text-tertiary-default);
+  --cd-list-text-color-neutral-light: var(--cd-color-text-neutral-inverse-default);
+  --cd-list-text-color-neutral-dark: var(--cd-color-text-neutral-default);
+
+  --cd-list-text-size: var(--cd-font-size-30);
+  --cd-list-line-height: var(--cd-font-line-height-lg);
+  --cd-list-font-family: var(--cd-font-family-body);
+
+  --cd-list-item-spacing: var(--cd-spacing-200);
+  --cd-list-item-position: outside;
+
   /* END VARIABLES */
   font-size: var(--cd-font-size-base);
 }
